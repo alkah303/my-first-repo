@@ -20,6 +20,7 @@ riders[15] = "Dean Wilson"
 riders[15] = "Dean Wilson"
 riders[15] = "Dean Wilson"
 
+//riders[199] = nil
 
 print("\n Tonight there will be \(riders.count) Riders lining up at the gate ")
 for (raceNum, riderName )in riders{
@@ -27,12 +28,19 @@ for (raceNum, riderName )in riders{
 }
 
 let gate = riders.count
-let need = 22 - riders.count
+let need = 20 - riders.count
 
-if gate < 20{
+if gate < 20 && need > 1{
     print(" \n We need \(need) more riders to sign up")
     
-}else{
-    print("\n We have enough riders\n Lets Go Racing!!")
+}else if gate < 20 && need > 1 {
+     print(" \n We need \(need) more riders to sign up")
+   
+} else if gate < 20 && need == 1{
+     print(" \n We need \(need) more rider to sign up")
+    
+} else{
+     print("\n We have enough riders\n Lets Go Racing!!")
+    
 }
 
