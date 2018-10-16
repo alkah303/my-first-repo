@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     
     
-    
+   // Handles playing the wav file 
     var player: AVAudioPlayer!
     
 
@@ -50,11 +50,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func pwrBtnPressed(_ sender: Any) {
-        cloudHolder.isHidden = false
+        cloudHolder.isHidden = false                             // <---States change when the button is pressed
         darkBlueBG.isHidden = true
         pwrButton.isHidden = true
-        
-        self.hstleLabel.isHidden = false
+        self.hstleLabel.isHidden = false 
       
         
         player.play()
@@ -62,12 +61,12 @@ class ViewController: UIViewController {
         
         
         UIView.animate(withDuration: 2.3, animations: {
-            self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 510)
+            self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 510)   
         }) { (finished) in
           //  self.hstleLabel.isHidden = false
             self.loadingLabel.isHidden = true
             self.onLabel.isHidden=false
-        }
+        }                                                                //<--- after animation is completed
         
     }
 
