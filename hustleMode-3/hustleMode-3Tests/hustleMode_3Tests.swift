@@ -1,15 +1,15 @@
 //
-//  hustle_mode_2Tests.swift
-//  hustle-mode-2Tests
+//  hustleMode_3Tests.swift
+//  hustleMode-3Tests
 //
 //  Created by Goodwin, Eric on 10/16/18.
 //  Copyright © 2018 Goodwin, Eric. All rights reserved.
 //
 
 import XCTest
-@testable import hustle_mode_2
+@testable import hustleMode_3
 
-class hustle_mode_2Tests: XCTestCase {
+class hustleMode_3Tests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

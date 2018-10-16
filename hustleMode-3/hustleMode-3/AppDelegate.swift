@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  hustle-mode-2
+//  hustleMode-3
 //
 //  Created by Goodwin, Eric on 10/16/18.
 //  Copyright © 2018 Goodwin, Eric. All rights reserved.
