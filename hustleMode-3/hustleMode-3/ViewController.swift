@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var onLabel: UILabel!
     @IBOutlet weak var hstleLabel: UILabel!
-    
+    @IBOutlet weak var loadingLabel: UILabel!
     
     
     
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         cloudHolder.isHidden = false
         darkBlueBG.isHidden = true
         pwrButton.isHidden = true
+        
+        self.hstleLabel.isHidden = false
       
         
         player.play()
@@ -62,7 +64,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 2.3, animations: {
             self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 510)
         }) { (finished) in
-            self.hstleLabel.isHidden = false
+          //  self.hstleLabel.isHidden = false
+            self.loadingLabel.isHidden = true
             self.onLabel.isHidden=false
         }
         
