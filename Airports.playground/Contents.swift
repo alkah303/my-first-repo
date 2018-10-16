@@ -9,10 +9,13 @@ namesOfIntegers[44] = "forty four"
 
 
 
-var airports: [ String: String] = ["CYYZ":"Toronto Pearson","KLAX": "Los Angeles International"]
+var airports: [ String: String] = ["CYYZ":"Toronto Pearson","KLAX": "Los Angeles International","KEWR": "Newark Liberty"]
 airports["OMDB"] = "Dubai International"
 airports["KNSA"] = "John Wayne"
 airports["KTEX"] = "Teluride"
+airports["KMCO"] = "Orlando International"
+
+
 
 //airports = [:]
 //print("the airport's dictionary has: \(airports.count) items")
