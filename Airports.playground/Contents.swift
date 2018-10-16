@@ -15,7 +15,7 @@ airports["KNSA"] = "John Wayne"
 airports["KTEX"] = "Telluride"
 airports["KMCO"] = "Orlando International"
 airports["KMCY"] = "Louis Armstrong"
-
+airports["KDTW"] = "Detroit International"
 //airports = [:]
 //print("the airport's dictionary has: \(airports.count) items")
 //airports["KNSA"] = nil // <---- remove an item from dictionary
@@ -27,7 +27,7 @@ if airports.isEmpty{
     print("the airport's dictionary has: \(airports.count) items")
 }
 
-for (airportCode, airportName) in airports{
+for (airportCode, airportName) in airports{   // <---- loops through everything in array
     print("\n")
     print("ICAO: \(airportCode) = \(airportName)")
     
