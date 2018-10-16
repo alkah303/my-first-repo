@@ -14,7 +14,7 @@ airports["OMDB"] = "Dubai International"
 airports["KNSA"] = "John Wayne"
 airports["KTEX"] = "Telluride"
 airports["KMCO"] = "Orlando International"
-airports["KMCY"] = ""
+airports["KMCY"] = "Louis Armstrong"
 
 //airports = [:]
 //print("the airport's dictionary has: \(airports.count) items")
