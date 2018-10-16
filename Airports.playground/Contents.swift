@@ -12,10 +12,9 @@ namesOfIntegers[44] = "forty four"
 var airports: [ String: String] = ["CYYZ":"Toronto Pearson","KLAX": "Los Angeles International","KEWR": "Newark Liberty"]
 airports["OMDB"] = "Dubai International"
 airports["KNSA"] = "John Wayne"
-airports["KTEX"] = "Teluride"
+airports["KTEX"] = "Telluride"
 airports["KMCO"] = "Orlando International"
-
-
+airports["KMCY"] = ""
 
 //airports = [:]
 //print("the airport's dictionary has: \(airports.count) items")
@@ -30,7 +29,7 @@ if airports.isEmpty{
 
 for (airportCode, airportName) in airports{
     print("\n")
-    print("\(airportCode): \(airportName)")
+    print("ICAO: \(airportCode) = \(airportName)")
     
 }
     
