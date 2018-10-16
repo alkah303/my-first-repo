@@ -16,9 +16,10 @@ riders[278] = "Ocey Parker Jr"
 riders[78] = "Ocey Parker"
 riders[428] = "Rasheed Shakur"
 riders[751] = "Josh Alfano"
-riders[15] = "Dean Wilson"
-riders[15] = "Dean Wilson"
-riders[15] = "Dean Wilson"
+riders[25] = "Marvin Musquin"
+riders[33] = "Josh Grant"
+riders[41] = "Trey Canard"
+riders[857] = "Mark Pillion"
 
 
 print("\n Tonight there will be \(riders.count) Riders lining up at the gate ")
