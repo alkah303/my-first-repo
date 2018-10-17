@@ -92,6 +92,21 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="sFb-LV-5Yv">
+            <objects>
+                <viewController id="SM9-eg-4pP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rz2-Ns-x17">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a3T-7J-62B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0h-O0-Fxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="138"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cloudsAndOrangeOval" width="414" height="477"/>
