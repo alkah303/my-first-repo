@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     cloudHolder.frame = view.frame
-     darkBlueBG.frame = view.frame
+    // cloudHolder.frame = view.frame
+    // darkBlueBG.frame = view.frame
       
        
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!

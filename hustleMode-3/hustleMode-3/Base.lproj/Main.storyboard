@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,12 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hustleMode_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="bvF-n0-MPS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="bvF-n0-MPS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRESS TO ENGAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-FE-uJY">
                                 <rect key="frame" x="99" y="217" width="178" height="60"/>
@@ -36,17 +35,15 @@
                                     <action selector="pwrBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAz-PR-qri"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-yk-UGO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-yk-UGO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-4H-ldq">
                                         <rect key="frame" x="0.0" y="501" width="354" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-DK-Zvo">
-                                        <rect key="frame" x="0.0" y="239" width="375" height="428"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-DK-Zvo">
+                                        <rect key="frame" x="0.0" y="385" width="414" height="477"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOADING&gt;&gt;&gt;&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhK-Ml-8iF">
                                         <rect key="frame" x="119" y="461" width="116" height="21"/>
@@ -71,9 +68,23 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.46274509803921571" blue="0.9677422531512605" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wXL-DK-Zvo" secondAttribute="trailing" id="n0g-BR-IDA"/>
+                                    <constraint firstAttribute="bottom" secondItem="wXL-DK-Zvo" secondAttribute="bottom" id="o6v-9x-y8q"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvF-n0-MPS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1HP-2X-A1h"/>
+                            <constraint firstItem="1NB-yk-UGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jpf-zz-lxM"/>
+                            <constraint firstItem="1NB-yk-UGO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QEa-XX-Jb6"/>
+                            <constraint firstItem="1NB-yk-UGO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W3u-B2-sjG"/>
+                            <constraint firstItem="bvF-n0-MPS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WKx-XW-xtX"/>
+                            <constraint firstItem="bvF-n0-MPS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dmu-4k-Pbz"/>
+                            <constraint firstItem="bvF-n0-MPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oTt-WT-eSz"/>
+                            <constraint firstItem="1NB-yk-UGO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xke-UT-ug5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
