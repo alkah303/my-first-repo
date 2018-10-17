@@ -20,10 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var hstleLabel: UILabel!
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var engageLabel: UILabel!
-   
-    
-    
-    
+    @IBOutlet weak var cloudsImage: UIImageView!
+ 
    // Handles playing the wav file 
     var player: AVAudioPlayer!
     
