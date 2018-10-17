@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var hstleLabel: UILabel!
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var engageLabel: UILabel!
-    
+   
     
     
     
@@ -30,6 +30,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+     cloudHolder.frame = view.frame
+     darkBlueBG.frame = view.frame
+      
        
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
    let url = URL(fileURLWithPath: path)
