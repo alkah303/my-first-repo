@@ -10,15 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-  /*
-    @IBOutlet weak var darkBlueBG: UIImageView!
-    @IBOutlet weak var pwrButton: UIButton!
-    @IBOutlet weak var rocket: UIImageView!
-    @IBOutlet weak var cloudHolder: UIView!
-    @IBOutlet weak var hstleLabel: UILabel!
-    @IBOutlet weak var onLabel: UILabel!
-    */
-    
+ 
     
     @IBOutlet weak var darkBlueBG: UIImageView!
     @IBOutlet weak var pwrButton: UIButton!
@@ -58,21 +50,14 @@ class ViewController: UIViewController {
         
         player.play()
         
-        
-        
         UIView.animate(withDuration: 2.3, animations: {
             self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 510)   
         }) { (finished) in
           //  self.hstleLabel.isHidden = false
             self.loadingLabel.isHidden = true
             self.onLabel.isHidden=false
-        }                                                                //<--- after animation is completed
-        
+        }                                                           //<--- States after animation is completes
     }
-
-
-
-
 }
 
 
