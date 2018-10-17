@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var onLabel: UILabel!
     @IBOutlet weak var hstleLabel: UILabel!
     @IBOutlet weak var loadingLabel: UILabel!
+    @IBOutlet weak var engageLabel: UILabel!
     
     
     
@@ -45,7 +46,8 @@ class ViewController: UIViewController {
         cloudHolder.isHidden = false                             // <---States change when the button is pressed
         darkBlueBG.isHidden = true
         pwrButton.isHidden = true
-        self.hstleLabel.isHidden = false 
+        self.hstleLabel.isHidden = false
+        self.engageLabel.isHidden = true
       
         
         player.play()
