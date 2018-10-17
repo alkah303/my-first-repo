@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var engageLabel: UILabel!
     @IBOutlet weak var cloudsImage: UIImageView!
- 
+    @IBOutlet weak var nextButton: UIButton!
+    
    // Handles playing the wav file 
     var player: AVAudioPlayer!
     
@@ -32,6 +33,8 @@ class ViewController: UIViewController {
      cloudHolder.frame = view.frame
      darkBlueBG.frame = view.frame
       
+        
+    
        
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
    let url = URL(fileURLWithPath: path)
@@ -42,7 +45,14 @@ class ViewController: UIViewController {
             print(error.description)
         }
     }
-
+    @IBAction func unwindFromNextVC(unwindSegue: UIStoryboardSegue){
+        cloudHolder.isHidden = true                             // <---States change when the button is pressed
+        darkBlueBG.isHidden = false
+        pwrButton.isHidden = false
+        self.hstleLabel.isHidden = true
+        self.engageLabel.isHidden = false
+        
+    }
 
     @IBAction func pwrBtnPressed(_ sender: Any) {
         cloudHolder.isHidden = false                             // <---States change when the button is pressed
@@ -50,6 +60,7 @@ class ViewController: UIViewController {
         pwrButton.isHidden = true
         self.hstleLabel.isHidden = false
         self.engageLabel.isHidden = true
+        self.nextButton.isHidden = false
       
         
         player.play()
