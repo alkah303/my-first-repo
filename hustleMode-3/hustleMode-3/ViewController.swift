@@ -60,17 +60,18 @@ class ViewController: UIViewController {
         pwrButton.isHidden = true
         self.hstleLabel.isHidden = false
         self.engageLabel.isHidden = true
-        self.nextButton.isHidden = false
+        
       
         
         player.play()
         
-        UIView.animate(withDuration: 2.3, animations: {
+        UIView.animate(withDuration: 3.3, animations: {
             self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 510)   
         }) { (finished) in
           //  self.hstleLabel.isHidden = false
             self.loadingLabel.isHidden = true
             self.onLabel.isHidden=false
+            self.nextButton.isHidden = false
         }                                                           //<--- States after animation is completes
     }
 }
