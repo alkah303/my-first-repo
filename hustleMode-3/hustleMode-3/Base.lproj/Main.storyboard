@@ -70,7 +70,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="SM9-eg-4pP" kind="show" id="CNJ-bb-0VU"/>
+                                            <segue destination="SM9-eg-4pP" kind="show" identifier="locationViewSegue" id="CNJ-bb-0VU"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUSTLE MODE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ww-oe-atR">
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-718" y="30"/>
         </scene>
         <!--Location Select View Controller-->
         <scene sceneID="sFb-LV-5Yv">
@@ -129,15 +129,71 @@
                                     <segue destination="Yqy-wu-HIY" kind="unwind" unwindAction="unwindFromNextVCWithUnwindSegue:" id="Hsm-n5-bHd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbM-QU-nxy">
+                                <rect key="frame" x="246" y="573" width="129" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitTapped:" destination="SM9-eg-4pP" eventType="touchUpInside" id="VLh-I7-uFW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="a3T-7J-62B"/>
                     </view>
+                    <connections>
+                        <segue destination="gIE-dX-cpy" kind="show" identifier="SubmitVCSegue" id="RrG-Ou-2Y6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0h-O0-Fxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Yqy-wu-HIY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1277.5999999999999" y="137.18140929535232"/>
+            <point key="canvasLocation" x="966" y="-591"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tge-fB-rIq">
+            <objects>
+                <viewController id="gIE-dX-cpy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fbu-OP-ZVt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdN-wv-cOb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.96774225319999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-Fh-PuO">
+                                <rect key="frame" x="0.0" y="86" width="112" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton1:" destination="xtU-sd-9u6" eventType="touchUpInside" id="LA2-Fh-g2V"/>
+                                    <segue destination="SM9-eg-4pP" kind="show" id="upA-w5-ehm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jdN-wv-cOb" firstAttribute="leading" secondItem="YJ0-wW-0R2" secondAttribute="leading" id="2pz-Vo-Cyp"/>
+                            <constraint firstItem="YJ0-wW-0R2" firstAttribute="trailing" secondItem="jdN-wv-cOb" secondAttribute="trailing" id="CMK-B0-iiJ"/>
+                            <constraint firstItem="jdN-wv-cOb" firstAttribute="top" secondItem="YJ0-wW-0R2" secondAttribute="top" id="Rnc-4m-4RM"/>
+                            <constraint firstItem="YJ0-wW-0R2" firstAttribute="bottom" secondItem="jdN-wv-cOb" secondAttribute="bottom" id="hye-J7-N68"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YJ0-wW-0R2"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="" id="zwr-Yz-TaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfc-FJ-EeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xtU-sd-9u6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="-13"/>
         </scene>
     </scenes>
     <resources>
@@ -146,4 +202,7 @@
         <image name="powerButton" width="96" height="96"/>
         <image name="rocketAndStream" width="414" height="672"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="upA-w5-ehm"/>
+    </inferredMetricsTieBreakers>
 </document>

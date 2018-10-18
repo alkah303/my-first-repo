@@ -44,12 +44,25 @@ class RocketLaunchViewController: UIViewController {
             print(error.description)
         }
     }
+
+    
     @IBAction func unwindFromNextVC(unwindSegue: UIStoryboardSegue){
         cloudHolder.isHidden = true                             // <---States change when the button is pressed
         darkBlueBG.isHidden = false
         pwrButton.isHidden = false
         hstleLabel.isHidden = true
         engageLabel.isHidden = false
+
+        //-----------------
+        
+        UIView.animate(withDuration: 3.3, animations: {
+            self.rocket.frame = CGRect(x: 0, y: 30, width: 375, height: 400)
+        }) { (finished) in
+            //  self.hstleLabel.isHidden = false
+           
+        }
+  
+        //----------------
         
     }
 
@@ -73,6 +86,10 @@ class RocketLaunchViewController: UIViewController {
             self.nextButton.isHidden = false
         }                                                           //<--- States after animation is completes
     }
+    
+    
+
+    
 }
 
 

@@ -16,6 +16,7 @@
 		6E3555222176606E00F1BC28 /* hustleMode_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3555212176606E00F1BC28 /* hustleMode_3UITests.swift */; };
 		6E3555302176609700F1BC28 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6E35552F2176609700F1BC28 /* hustle-on.wav */; };
 		6ED99C702178E774004D509D /* LocationSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED99C6F2178E774004D509D /* LocationSelectViewController.swift */; };
+		6ED99C7221790FA0004D509D /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED99C7121790FA0004D509D /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6E3555232176606E00F1BC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E35552F2176609700F1BC28 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
 		6ED99C6F2178E774004D509D /* LocationSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectViewController.swift; sourceTree = "<group>"; };
+		6ED99C7121790FA0004D509D /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				6E3555032176606D00F1BC28 /* RocketLaunchViewController.swift */,
 				6ED99C6F2178E774004D509D /* LocationSelectViewController.swift */,
+				6ED99C7121790FA0004D509D /* SubmitViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED99C7221790FA0004D509D /* SubmitViewController.swift in Sources */,
 				6E3555042176606D00F1BC28 /* RocketLaunchViewController.swift in Sources */,
 				6ED99C702178E774004D509D /* LocationSelectViewController.swift in Sources */,
 				6E3555022176606D00F1BC28 /* AppDelegate.swift in Sources */,

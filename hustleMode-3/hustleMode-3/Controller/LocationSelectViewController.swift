@@ -16,8 +16,15 @@ class LocationSelectViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBOutlet weak var tablecell1: UIView!
+ 
+    
+    @IBAction func backButton1(unwindSegue: UIStoryboardSegue) {
+    }
+    @IBAction func submitTapped(_ sender: Any) {
+        performSegue(withIdentifier: "SubmitVCSegue", sender: self)
+      
+    }
+    
     
     
 
