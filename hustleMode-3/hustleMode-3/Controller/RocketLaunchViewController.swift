@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class RocketLaunchViewController: UIViewController {
  
     
     @IBOutlet weak var darkBlueBG: UIImageView!
@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var hstleLabel: UILabel!
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var engageLabel: UILabel!
-    @IBOutlet weak var cloudsImage: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     
    // Handles playing the wav file 
@@ -49,8 +48,8 @@ class ViewController: UIViewController {
         cloudHolder.isHidden = true                             // <---States change when the button is pressed
         darkBlueBG.isHidden = false
         pwrButton.isHidden = false
-        self.hstleLabel.isHidden = true
-        self.engageLabel.isHidden = false
+        hstleLabel.isHidden = true
+        engageLabel.isHidden = false
         
     }
 

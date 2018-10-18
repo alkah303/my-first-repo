@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rocket Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hustleMode_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RocketLaunchViewController" customModule="hustleMode_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,6 @@
                     </view>
                     <connections>
                         <outlet property="cloudHolder" destination="1NB-yk-UGO" id="jQY-Dg-dbG"/>
-                        <outlet property="cloudsImage" destination="wXL-DK-Zvo" id="KCx-sC-jlm"/>
                         <outlet property="darkBlueBG" destination="bvF-n0-MPS" id="LZ3-jx-eKd"/>
                         <outlet property="engageLabel" destination="w1F-FE-uJY" id="ZAw-Hl-t1u"/>
                         <outlet property="hstleLabel" destination="5ww-oe-atR" id="B7a-cF-Lby"/>
@@ -104,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Select View Controller-->
         <scene sceneID="sFb-LV-5Yv">
             <objects>
-                <viewController id="SM9-eg-4pP" sceneMemberID="viewController">
+                <viewController id="SM9-eg-4pP" customClass="LocationSelectViewController" customModule="hustleMode_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rz2-Ns-x17">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +123,7 @@
                                 <rect key="frame" x="0.0" y="20" width="112" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Yqy-wu-HIY" kind="unwind" unwindAction="unwindFromNextVCWithUnwindSegue:" id="Hsm-n5-bHd"/>
