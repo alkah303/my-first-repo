@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         splashScreen.isHidden = true
         engageButton.isHidden = true
         engageLabel.isHidden = true
+        backButton.isHidden = false
         
     }
     
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
         splashScreen.isHidden = false
         engageButton.isHidden = false
         engageLabel.isHidden = false
+      backButton.isHidden = true
         
     }
     
