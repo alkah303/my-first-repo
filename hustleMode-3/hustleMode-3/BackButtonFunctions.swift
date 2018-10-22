@@ -1,14 +1,14 @@
 //
-//  hustleMode_3UITests.swift
-//  hustleMode-3UITests
+//  BackButtonFunctions.swift
+//  hustleMode-3Tests
 //
-//  Created by Goodwin, Eric on 10/16/18.
+//  Created by Goodwin, Eric on 10/22/18.
 //  Copyright © 2018 Goodwin, Eric. All rights reserved.
 //
 
 import XCTest
 
-class hustleMode_3UITests: XCTestCase {
+class BackButtonFunctions: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,10 +26,9 @@ class hustleMode_3UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
-    func testEngageButtonPressed (){
-        
-        
+    func testExample() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
 }
