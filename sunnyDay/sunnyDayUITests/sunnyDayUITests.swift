@@ -36,14 +36,12 @@ class sunnyDayUITests: XCTestCase {
     }
     
     func testRestartApp(){
-        
         let app = XCUIApplication()
         let powerbuttonButton = app.buttons["powerButton"]
         powerbuttonButton.tap()
         app.buttons["BACK"].tap()
         powerbuttonButton.tap()
         XCTAssertTrue(app.buttons["BACK"].exists)
-        
     }
     
 }

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sunnyDayUITests/sunnyDayUITests.swift"
-            timestampString = "561921284.2238441"
+            timestampString = "561930415.926874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sunnyDayUITests/sunnyDayUITests.swift"
-            timestampString = "561921284.224512"
+            timestampString = "561930415.927271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "testRestartApp()"
             landmarkType = "7">
          </BreakpointContent>

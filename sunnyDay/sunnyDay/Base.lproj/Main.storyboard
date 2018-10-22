@@ -53,6 +53,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAl-ic-cVd">
+                                <rect key="frame" x="296" y="609" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Browse"/>
+                                <connections>
+                                    <segue destination="77a-wn-PaA" kind="show" identifier="Browse" id="Aea-ma-1T7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,6 +78,7 @@
                     <connections>
                         <outlet property="HomeScreen" destination="u5n-Vt-WfM" id="8Gy-xB-PTB"/>
                         <outlet property="backButton" destination="cSo-Tb-1eE" id="arQ-ST-ZAY"/>
+                        <outlet property="browseButton" destination="oAl-ic-cVd" id="yHV-03-tSp"/>
                         <outlet property="engageButton" destination="uyy-3g-HvK" id="l45-c9-yHd"/>
                         <outlet property="engageLabel" destination="wdz-3y-orb" id="hEE-m0-NaT"/>
                         <outlet property="splashScreen" destination="s4U-rs-qrY" id="uE1-cA-PDl"/>
@@ -78,6 +87,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cDM-co-tbN">
+            <objects>
+                <viewController id="77a-wn-PaA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZN4-hi-hUo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pnggrad16rgb" translatesAutoresizingMaskIntoConstraints="NO" id="PxT-hY-MsO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wck-9y-I6W" firstAttribute="bottom" secondItem="PxT-hY-MsO" secondAttribute="bottom" id="31B-av-mwt"/>
+                            <constraint firstItem="wck-9y-I6W" firstAttribute="trailing" secondItem="PxT-hY-MsO" secondAttribute="trailing" id="gWG-wf-hBc"/>
+                            <constraint firstItem="PxT-hY-MsO" firstAttribute="leading" secondItem="wck-9y-I6W" secondAttribute="leading" id="ldi-Vo-6ik"/>
+                            <constraint firstItem="PxT-hY-MsO" firstAttribute="top" secondItem="wck-9y-I6W" secondAttribute="top" id="tu2-TG-J2i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wck-9y-I6W"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="PxT-hY-MsO" id="WZA-Bm-SyZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ft-1t-We1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="138"/>
         </scene>
     </scenes>
     <resources>

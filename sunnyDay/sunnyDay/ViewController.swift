@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var engageLabel: UILabel!
     
+    @IBOutlet weak var browseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         engageButton.isHidden = true
         engageLabel.isHidden = true
         backButton.isHidden = false
+        browseButton.isHidden = false
         
     }
     
@@ -40,6 +42,9 @@ class ViewController: UIViewController {
       backButton.isHidden = true
         
     }
+    
+    
+    
     
 }
 
